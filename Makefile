@@ -4,7 +4,8 @@ BIN:=math_prog3
 
 all: $(BIN)
 
-$(CC) -o $@ math.c
+$(BIN): math.c
+	$(CC) -o $@ math.c
 
 clean:
 	rm -f $(BIN)
